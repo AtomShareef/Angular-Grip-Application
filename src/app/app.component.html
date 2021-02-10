@@ -1,0 +1,29 @@
+<!-- <ag-grid-angular
+  style="width: 500px; height: 500px"
+  class="ag-theme-balham"
+  [rowData]="rowData | async"
+  [columnDefs]="columnDefs"
+> -->
+<!-- <button (click)="getSelectedRows()">Get Selected Rows</button>
+<ag-grid-angular
+  #agGrid
+  style="width: 650px; height: 500px"
+  class="ag-theme-balham"
+  [rowData]="rowData | async"
+  [columnDefs]="columnDefs"
+  rowSelection="multiple"
+>
+</ag-grid-angular> -->
+<button (click)="getSelectedRows()">Get Selected Rows</button>
+<ag-grid-angular
+    #agGrid
+    style="width: 500px; height: 500px;"
+    class="ag-theme-alpine"
+    [rowData]="rowData | async"
+    [columnDefs]="columnDefs"
+    rowSelection="multiple"
+    [defaultColDef]="defaultColDef"
+    [autoGroupColumnDef]="autoGroupColumnDef"
+    [groupSelectsChildren]="true"
+>
+</ag-grid-angular>
